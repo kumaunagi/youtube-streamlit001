@@ -18,6 +18,7 @@ for i in range(100):
 
 'Done!!!'
 
+"""
 def load_data():
     iris = datasets.load_iris()
     df = pd.DataFrame(iris.data, columns=iris.feature_names)
@@ -30,6 +31,7 @@ selected_targets = st.multiselect('select targets', targets, default=targets)
 df = df[df.target.isin(selected_targets)]
 
 st.dataframe(df)
+"""
 
 """
 # 章
